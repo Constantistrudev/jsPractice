@@ -7,7 +7,16 @@ function shapeDefinition(sidesCount){
 }
 // Проверка на существование треугольника
 function isTriangle(sidesArray){
-    return true
+    for(let i =1; i<=sidesArray.length-1;i++) {
+        if(i==sidesArray.length-1){
+            if (sidesArray[i-1] + sidesArray[i] > sidesArray[0] && sidesArray[i] + sidesArray[0] > sidesArray[i-1] && sidesArray[0] + sidesArray[i-1] > sidesArray[i] && sidesArray[i] + sidesArray[0] > sidesArray[1] && sidesArray[0] + sidesArray[1] > sidesArray[i] && sidesArray[1] + sidesArray[i] > sidesArray[1]) {
+                return true;
+            }
+        }
+        else if (sidesArray[0] + sidesArray[1] > sidesArray[2] && sidesArray[1] + sidesArray[2] > sidesArray[0] && sidesArray[2] + sidesArray[0] > sidesArray[1]) {
+            return true;
+        }
+    }
 }
 //Периметр
 function perimetrCalc(sidesArray){
@@ -33,6 +42,7 @@ function angleCalc(sidesArray){
 while(flag){
     let sides = parseInt(prompt("Количество сторон",''));
     let shape = shapeDefinition(sides);
+
     if(sides == 0){
         let radius = parseInt(prompt("Введите радиус",''));
         alert(`${shape}\n Радиус = ${radius} \n Площадь = ${radius*(PI**2)} \n Длина окружности = ${radius*2*PI}`)
@@ -44,10 +54,9 @@ while(flag){
         }
         if(arr.indexOf(0)==-1){
             if(isTriangle(arr)){
+                alert(`Периметр = ${perimetrCalc(arr)} \n Площадь = ${squareCalc(arr)}`)
                 angleCalc(arr)
             }
-
-            alert(`Периметр = ${perimetrCalc(arr)} \n Площадь = ${squareCalc(arr)}`)
         }
         else{
             alert('Такой фигуры нету');
