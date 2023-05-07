@@ -38,7 +38,12 @@ function squareCalc(sidesArray){
 function angleCalc(sidesArray){
     //провести подстчет по треугольникам.
 }
-
+let obj  = {
+    1: 125,
+    2: 225,
+    3: 356,
+    4: 542,
+}
 while(flag){
     let sides = parseInt(prompt("Количество сторон",''));
     let shape = shapeDefinition(sides);

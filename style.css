@@ -75,7 +75,13 @@
     margin-top: 2rem;
     transition: background-color 0.2s ease-in-out;
 }
-
+/* Main input block*/
+.main__input{
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+}
 .main__button:hover {
     background-color: #555;
 }
@@ -86,4 +92,5 @@
     color: #333;
     margin-top: 2rem;
     font-family: "Helvetica Neue", sans-serif;
+    text-align: center;
 }

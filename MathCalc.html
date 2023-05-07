@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class ="input-container">
+    <input placeholder="a:">
+    <input placeholder="b:">
+    <input placeholder="c:">
+    <button class="button"> Math</button>
+  </div>
+  <p id="answer"></p>
+</div>
+
+<script>
+  let inpt = document.querySelectorAll('input')
+  let answer = document.getElementById('answer')
+  let btn = document.querySelector('button')
+  btn.addEventListener('click',function (){answer.innerText = discriminant(inpt[0],inpt[1],inpt[2])})
+  function discriminant(a,b,c){
+    let D = parseInt(b**2-4*a*c);
+    if(D>0){
+      return `2 answers:\n x1= ${(-b+ D**0.5)/(2*a)}  x2 = ${(-b- D**0.5)/(2*a)}`
+    }
+    else if(D==0){
+      return `1 answer:\n x1,2= ${(-b)/(2*a)}`
+    }
+    else
+    {
+      return "No answer"
+    }
+  }
+
+
+
+</script>
+</body>
+</html>
