@@ -20,3 +20,70 @@
     margin: 0 auto;
     column-gap: 50px;
 }
+/* Header block */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header title block */
+.header__title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Main block */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+/* Main content block */
+.main__content {
+    margin: 0 auto;
+    padding: 0 10px;
+    min-width: 300px;
+    height: 400px;
+    background: linear-gradient(to bottom right, #FF512F, #DD2476);
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Main button block */
+.main__button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.main__button:hover {
+    background-color: #555;
+}
+
+/* Main paragraph block */
+.main__paragraph {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 2rem;
+    font-family: "Helvetica Neue", sans-serif;
+}
