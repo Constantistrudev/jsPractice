@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHOTUS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Define BEM class names for the blocks and elements */
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .header {
+            background-color: #252525;
+            color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: 50px auto 20px auto;
+        }
+
+        .container__button {
+            background-color: #4CAF50;
+            color: #f1f1f1;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.5em;
+            margin-right: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container__button:hover {
+            background-color: #3e8e41;
+        }
+
+        .photos {
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .photos__save-button {
+            margin-top: 50px;
+            background-color: #4CAF50;
+            color: #f1f1f1;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.5em;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        .photos__save-button:hover {
+            background-color: #3e8e41;
+        }
+
+        /* Style for contrast text */
+        body {
+            color: #252525;
+            background-color: #f1f1f1;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 1.2em;
+            line-height: 1.5em;
+        }
+
+        @media (max-width: 600px) {
+            .header__title {
+                font-size: 1.5em;
+            }
+            .container__button {
+                font-size: 1.2em;
+            }
+            .photos__save-button {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Header block with title "PHOTUS" in the center -->
+<div class="header">
+    <h1 class="header__title">PHOTUS</h1>
+</div>
+
+<!-- Container with two buttons -->
+<div class="container">
+    <button id="generation"class="container__button">Generate photo</button>
+    <button class="container__button">Saved photos</button>
+</div>
+
+<!-- Div block for photos -->
+<div class="photos">
+    <!-- Placeholder for photos -->
+</div>
+
+<!-- Save picture button outside of the photos div block -->
+<button class="photos__save-button">Save picture</button>
+</body>
+</html>
