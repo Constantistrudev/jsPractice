@@ -11,16 +11,16 @@ main{
     display: flex;
 }
 .header {
-    background: #fff;
+    background: #f7f7f7;
     text-align: center;
     padding: 20px 0;
-}
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));}
 
 .header h1 {
     font-size: 36px;
     margin: 0;
     color: #333333;
-    -webkit-background-clip: text;
+    text-transform: uppercase;
 
 }
 
@@ -43,7 +43,7 @@ main{
 .author {
     font-style: italic;
     display: block;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 button {
@@ -61,11 +61,15 @@ button {
     border: 4px solid #fff;
     padding: 20px;
     text-align: center;
+    list-style: none;
+}
+.quote-text{
+    font-size: 28px;
 }
 
 .quote-list p {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 3rem;
 }
 
 .quote-list ul {
