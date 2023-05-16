@@ -111,7 +111,6 @@ body {
   .container__message {
     text-align: center;
 
-    border-radius: 10px;
   }
   
   @keyframes fadeIn {
@@ -128,5 +127,7 @@ body {
   .container__message-text {
     font-size: 18px;
     color: #333333;
+    
+    border-radius: 10px;
   }
   
