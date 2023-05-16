@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/GuesNumberGame.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="header__title">Guess the number</h1>
+      </div>
+      
+      <div class="container">
+        <div class="container__box">
+          <p class="container__text">Number from 1 to 100</p>
+          <input placeholder = "Write a number" type="number" onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57" class="container__input">
+          <button class="container__button">Gues</button>
+        </div>
+        <div class="container__paragraphs">
+          <p class="container__paragraph attempts">Attempt number: <span id="count"></span></p>
+          <p class="container__paragraph">Numbers that were: <span id="gues"></span></p>
+        </div>
+        <div class="container__message correct">
+          <div class="container__message-text ">few</div>
+        </div>
+      </div>
+      <script src="/JS/GuesNumberGame.js"></script>
+</body>
+</html>
